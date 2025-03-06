@@ -8,3 +8,45 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ nav{
+    border: 1px solid black;
+    height: 50px;
+ }
+ aside{
+    border: 1px solid rgb(31, 231, 249);
+    height: 500px;
+    width: 200px;
+    display: inline-block;
+
+ }
+
+ section{
+    border: 1px solid rgb(27, 27, 27);
+    height: 500px;
+    width: 90%;
+    
+
+ }
+
+ article{
+    border: 1px solid red;
+    width: 500px;
+    height: 500px;
+    display: inline-flex;
+
+ }
+
+/*
+body{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+#libros{
+
+}
+*/
+
+div{
+display: inline-flex;
+}

@@ -23,6 +23,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <main>
+      <nav>
+      </nav>
+      <section>
+        <aside>
+          <%= link_to "New libro", new_libro_path %>
+        </aside>
+        <article>
+         <%= yield %>
+        </article>
+      </section>
   </body>
 </html>
