@@ -1,24 +1,25 @@
-<%= form_with(model: libro) do |form| %>
+<%= form_with(model: libro local: true, class: "container mt-4 p-4 border rounded shadow-sm bg-light") do |form| %>
   <% if libro.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(libro.errors.count, "error") %> prohibited this libro from being saved:</h2>
+    <div style="color: red" class="alert alert-danger">
+      <h2>class="alert-heading"><%= pluralize(libro.errors.count, "error") %> prohibited this libro from being saved:</h2>
 
       <ul>
         <% libro.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
-      </ul>
+      </ul class="mb-0">
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :nombre, style: "display: block" %>
+  <div class="form-group">
+    <%= form.label :nombre, style: class: "font-weight-bold"  %>
     <%= form.text_field :nombre %>
+    
   </div>
 
   <div>
-    <%= form.label :autor, style: "display: block" %>
-    <%= form.text_field :autor %>
+    <%= form.label :autor, class: "font-weight-bold" %>
+    <%= form.text_field :autor, class: "form-control", placeholder: "Ingresa el autor" %>
   </div>
 
   <div>

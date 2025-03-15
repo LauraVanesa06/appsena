@@ -1,14 +1,16 @@
 
-
  nav{
     border: 1px solid black;
-    height: 50px;
+    height: 50px;   margin: auto;
+    width: 90%;
+
  }
 
  
  section{
    border: 1px solid rgb(27, 27, 27);
    height: 500px;
+   margin: auto;
    width: 90%;
    display: flex;
    justify-content: space-around;
@@ -16,6 +18,7 @@
    
 
 }
+
 
  aside{
     border: 1px solid rgb(31, 231, 249);
@@ -30,10 +33,20 @@
     border: 1px solid red;
     width: 60%;
     height: 500px;
-   display: inline-block;
+   flex-direction: column;
+   align-items: center
+   
 
  }
-
+#libros{
+display: flex;
+align-items: flex-start;
+flex-direction: row-reverse;
+}
+.breack{
+   display: flex;
+   flex-direction: row;
+}
 /*
 body{
     text-align: center;
