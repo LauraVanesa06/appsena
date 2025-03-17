@@ -41,11 +41,17 @@
 #libros{
 display: flex;
 align-items: flex-start;
-flex-direction: row-reverse;
+flex-direction: column;
 }
 .breack{
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
+}
+.show{
+   display: inline-block;
+}
+table{
+   border: 1px solid black;
 }
 /*
 body{

@@ -1,3 +1,4 @@
+
 <p style="color: green"><%= notice %></p>
 
 <% content_for :title, "Libros" %>
@@ -6,13 +7,14 @@
 
 <div id="libros">
   <table border 1px>
+  
   <% @libros.each do |libro| %>
     <%= render libro %>
-    <p class"breack">
+    <p >
       <%= link_to "Show this libro", libro %>
     </p> 
   <% end %>
 </div>
     
   </table>
- 
+  
