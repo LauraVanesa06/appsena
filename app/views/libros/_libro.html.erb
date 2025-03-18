@@ -1,16 +1,14 @@
-<table >
-<th>
-nombre
-</th>
-<td>   <%= libro.nombre %> </td>
-<th>
-autor(a)
-</th>
-<td>     <%= libro.autor %> </td>
-<th>
-genero
-</th>
-<td>  <%= libro.genero %> </td>
-</table>
 
+ 
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"> <%= libro.nombre   %>  </h5>
+    <h6 class="card-subtitle mb-2 text-muted">    <%= libro.autor %> </h6>
+    <p class="card-text">  <%= libro.genero %> </p>
+    <a href="#" class="card-link">    <%= link_to "Show this libro", libro %> </a>
+
+  </div>
+</div>
 

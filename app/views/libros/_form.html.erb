@@ -1,4 +1,6 @@
-<%= form_with(model: libro local: true, class: "container mt-4 p-4 border rounded shadow-sm bg-light") do |form| %>
+<%= form_with(model: libro, local: true, class: "container mt-4 p-4 border rounded shadow-sm bg-light") do |form| %>
+
+
   <% if libro.errors.any? %>
     <div style="color: red" class="alert alert-danger">
       <h2>class="alert-heading"><%= pluralize(libro.errors.count, "error") %> prohibited this libro from being saved:</h2>

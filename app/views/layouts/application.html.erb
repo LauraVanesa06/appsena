@@ -30,9 +30,22 @@
       <section>
         <aside>
           <%= link_to "New libro", new_libro_path %>
+          <br>
+          <br>
+          <%= link_to "Mostrar pelicula", prefijo1_path %>
+          <br>
+          <br>
+          <%= link_to "editar pelicula", prefijo2_path %>
+          <br><br>
+          <%= link_to "Nueva pelicula", prefijo3_path %>
+          <br>
+          <br>
+          <%= link_to "eliminar pelicula", prefijo4_path %>
         </aside>
+
         <article>
-         <%= yield %>
+        <%= yield %>
+              
         </article>
       </section>
   </body>

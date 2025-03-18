@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  fecha_public: 2025-03-17
+  genero: MyString
+  duracion: 2025-03-17 21:50:54
+
+two:
+  nombre: MyString
+  fecha_public: 2025-03-17
+  genero: MyString
+  duracion: 2025-03-17 21:50:54
