@@ -32,7 +32,7 @@
           <%= link_to "New libro", new_libro_path %>
           <br>
           <br>
-          <%= link_to "Mostrar pelicula", prefijo1_path %>
+          <%= link_to "Mostrar pelicula",  movie_path(movie), method: :show %>
           <br>
           <br>
           <%= link_to "editar pelicula", prefijo2_path %>
@@ -40,7 +40,7 @@
           <%= link_to "Nueva pelicula", prefijo3_path %>
           <br>
           <br>
-          <%= link_to "eliminar pelicula", prefijo4_path %>
+          <%= link_to "eliminar pelicula", movie_path(movie), method: :delete, data: { confirm: "¿Seguro que deseas eliminar esta película?" } %>
         </aside>
 
         <article>

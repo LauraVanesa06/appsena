@@ -1,0 +1,28 @@
+<h1>Lista de Películas</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Fecha de Publicación</th>
+      <th>Género</th>
+      <th>Duración</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td><%= movie.id %></td>
+        <td><%= movie.nombre %></td>
+        <td><%= movie.fecha_public %></td>
+        <td><%= movie.genero %></td>
+        <td><%= movie.duracion %> min</td>
+        <td>
+          <%= link_to "Eliminar", movie_path(movie), method: :delete, data: { confirm: "¿Estás seguro de que deseas eliminar esta película?" }, class: "btn btn-danger btn-sm" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

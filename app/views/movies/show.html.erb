@@ -1,5 +1,9 @@
-<h1> Las peliculas disponibles: </h1>
-<%= @mostrar.nombre %>
-<%= @mostrar.fecha_public %>
-<%= @mostrar.genero %>
-<%= @mostrar.duracion %>
+<h1> Las peliculas disponibles: </h1> 
+<% @movies.each do |movie| %>
+
+<p> Nombre: <%= movie.nombre %> </p>
+<p> Fecha de estreno: <%= movie.fecha_public %> </p>
+<p> genero: <%= movie.genero %> </p>
+<p> duracion en minutos: <%= movie.duracion %> </p>
+
+<% end %>

@@ -8,10 +8,10 @@ Rails.application.routes.draw do
   get "gmail" => "personas#gmail", as: :nose
   get "deudas" => "personas#deudas"
 
-  get "ver" => "movies#show", as: :prefijo1
+  get "ver" => "movies#show", as: :prefijo1_path
   get "editar" => "movies#edit", as: :prefijo2
   get "nuevo" => "movies#new", as: :prefijo3
-  get "eliminar" => "movies#delete", as: :prefijo4
+  get "eliminar/:id" => "movies#delete", as: "prefijo4"
 
   resources :libros
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
