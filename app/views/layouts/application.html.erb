@@ -29,23 +29,17 @@
       </nav>
       <section>
         <aside>
+        <!--
           <%= link_to "New libro", new_libro_path %>
           <br>
-          <br>
-          <%= link_to "Mostrar pelicula",  movie_path(movie), method: :show %>
-          <br>
-          <br>
-          <%= link_to "editar pelicula", prefijo2_path %>
-          <br><br>
-          <%= link_to "Nueva pelicula", prefijo3_path %>
-          <br>
-          <br>
-          <%= link_to "eliminar pelicula", movie_path(movie), method: :delete, data: { confirm: "¿Seguro que deseas eliminar esta película?" } %>
+         
+          
         </aside>
 
         <article>
         <%= yield %>
-              
+               <p class=«notice»><%= notice %></p>
+       <p class=«alert»><%= alert %></p>
         </article>
       </section>
   </body>

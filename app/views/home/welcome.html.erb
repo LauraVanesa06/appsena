@@ -1,0 +1,6 @@
+<% if user_signed_in? %> 
+<h1> WELCOME TO NEW YORK </h1>
+<p> Bienvenido, <%= current_user.email %></p>
+<%= link_to 'cerrar sesion', destroy_user_session_patch, method: :delete %>
+<% end %>
+
