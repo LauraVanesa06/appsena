@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   get "nuevo" => "movies#new", as: :prefijo3
   get "eliminar/:id" => "movies#delete", as: "prefijo4"
 
-  get "home" => "home#welcome"
+  devise_for :user
+  root to: "home#welcome"
 
   resources :libros
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
